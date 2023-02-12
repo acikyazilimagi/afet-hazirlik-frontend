@@ -8,7 +8,7 @@ export default function Home({ API_URL }: any) {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>AfetHazırlık - Olası afetlere karşı hazır olun</title>
       </Head>
 
       <Landing />

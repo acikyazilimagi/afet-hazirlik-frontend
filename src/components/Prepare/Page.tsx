@@ -1,4 +1,4 @@
-import Breadcrumb from "@/components/Prepare/BreadCrumb";
+import Breadcrumb from "@/components/Prepare/Breadcrumb";
 import Header from "@/components/Prepare/Header";
 import Main from "@/components/Prepare/Main";
 import SideMenu from "@/components/Prepare/SideMenu";
@@ -13,9 +13,9 @@ const Page = ({ children }: any) => {
   return (
     <>
       <Layout>
-        <Header />
+        {/* <Header /> */}
         <Layout>
-          <SideMenu />
+          {/* <SideMenu /> */}
           <Layout style={{ padding: "0 24px 24px" }}>
             <Breadcrumb />
             <Main>{children}</Main>

@@ -1,4 +1,4 @@
-import { useBreadcrumbPath } from "@/hooks/userBreadcrumbPath";
+import { useBreadcrumbPath } from "@/hooks/useBreadcrumbPath";
 import { Breadcrumb as AntBreadCrumb } from "antd";
 import React from "react";
 

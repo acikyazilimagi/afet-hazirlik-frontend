@@ -1,3 +1,3 @@
 # afet-hazirlik-frontend
 
-![Ekran görüntüsü](./assets/ss.png)
+![Ekran görüntüsü](./assets/ss2.png)

@@ -1,13 +1,8 @@
-import Head from "next/head";
-import Image from "next/image";
+import React from "react";
+import HomeSelection from "./1-field-analysis";
 
-export default function Home({ API_URL }: any) {
-  return (
-    <>
-      <Head>
-        <title>Prepare</title>
-      </Head>
-      <h1>Prepare</h1>
-    </>
-  );
-}
+const App = () => {
+  return <HomeSelection />;
+};
+
+export default App;

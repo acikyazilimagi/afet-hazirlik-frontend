@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -18,12 +19,18 @@ const Hero = () => {
             insani krizlerle de sıkça karşı karşıya kalabiliyor.
           </p>
           <div className="flex justify-center">
-            <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+            <Link
+              href="/prepare"
+              className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+            >
               Hazırlığa başla
-            </button>
-            <button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
+            </Link>
+            <Link
+              href="/info"
+              className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg"
+            >
               Daha fazla bilgi
-            </button>
+            </Link>
           </div>
         </div>
         <div className="">

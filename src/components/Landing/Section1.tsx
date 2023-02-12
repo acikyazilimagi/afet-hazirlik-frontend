@@ -33,9 +33,9 @@ const Section1 = () => {
                     d="M4,9.71,12,4l8,5.71"
                     fill="none"
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                   />
                   <path
                     id="primary-2"
@@ -43,9 +43,9 @@ const Section1 = () => {
                     d="M18,16V8.29m-12,0V16"
                     fill="none"
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                   />
                   <path
                     id="primary-3"
@@ -53,9 +53,9 @@ const Section1 = () => {
                     d="M3,19.5c1.5,0,1.5.5,3,.5s1.5-.5,3-.5,1.5.5,3,.5,1.5-.5,3-.5,1.5.5,3,.5,1.5-.5,3-.5"
                     fill="none"
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                   />
                   <path
                     id="primary-4"
@@ -63,9 +63,9 @@ const Section1 = () => {
                     d="M3,15.5c1.5,0,1.5.5,3,.5s1.5-.5,3-.5,1.5.5,3,.5,1.5-.5,3-.5,1.5.5,3,.5,1.5-.5,3-.5"
                     fill="none"
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                   />
                 </g>
               </svg>

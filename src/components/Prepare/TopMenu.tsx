@@ -1,16 +1,27 @@
-import { Menu, MenuProps } from "antd";
+import { Menu, MenuProps, theme } from "antd";
 import React from "react";
 
+const { useToken } = theme;
 const TopMenu = () => {
-  const items1: MenuProps["items"] = ["1", "2", "3"].map((key) => ({
+  const items1: MenuProps["items"] = [
+    "Anasayfa",
+    "Hakkımızda",
+    "İletişim",
+    "Giriş Yap",
+  ].map((key) => ({
     key,
-    label: `nav ${key}`,
+    label: key,
   }));
+  const { token } = useToken();
   return (
     <Menu
+      style={{
+        backgroundColor: token.colorPrimary,
+        justifyContent: "flex-end",
+      }}
       theme="dark"
       mode="horizontal"
-      defaultSelectedKeys={["2"]}
+      defaultSelectedKeys={["Anasayfa"]}
       items={items1}
     />
   );

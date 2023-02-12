@@ -2,12 +2,18 @@ import Breadcrumb from "@/components/Prepare/Breadcrumb";
 import Header from "@/components/Prepare/Header";
 import Main from "@/components/Prepare/Main";
 import SideMenu from "@/components/Prepare/SideMenu";
-import { Layout } from "antd";
+import { ConfigProvider, Layout } from "antd";
 import React from "react";
 
 const Page = ({ children }: any) => {
   return (
-    <>
+    <ConfigProvider
+      theme={{
+        token: {
+          colorPrimary: "#6466F1",
+        },
+      }}
+    >
       <Layout>
         <Header />
         <Layout>
@@ -18,7 +24,7 @@ const Page = ({ children }: any) => {
           </Layout>
         </Layout>
       </Layout>
-    </>
+    </ConfigProvider>
   );
 };
 

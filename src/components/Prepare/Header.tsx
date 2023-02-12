@@ -1,15 +1,22 @@
-import { MenuProps } from "antd";
+import { MenuProps, theme, Typography } from "antd";
 import React from "react";
 import { Layout } from "antd";
 import TopMenu from "./TopMenu";
 import styles from "../../../styles/Header.module.css";
+import Image from "next/image";
 
 const { Header: AntHeader } = Layout;
+const { useToken } = theme;
+const { Text } = Typography;
 
 const Header = () => {
+  const { token } = useToken();
   return (
-    <AntHeader className="header">
-      <div className={styles.logo} />
+    <AntHeader style={{ backgroundColor: token.colorPrimary }}>
+      <div className={styles.logo}>
+        <Image width={30} height={30} src="/logo-invert.png" alt="Logo" />
+        <Text>afethazırlık</Text>
+      </div>
       <TopMenu />
     </AntHeader>
   );

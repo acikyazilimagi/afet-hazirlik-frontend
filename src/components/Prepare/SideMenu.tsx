@@ -19,7 +19,7 @@ const SideMenu = () => {
       <Sider width={400} style={{ background: colorBgContainer, padding: 12 }}>
         <Menu
           mode="inline"
-          defaultSelectedKeys={[navData[0].href]}
+          defaultSelectedKeys={[pathname]}
           defaultOpenKeys={[navData[0].href]}
           style={{ height: "100%", borderRight: 0 }}
         >

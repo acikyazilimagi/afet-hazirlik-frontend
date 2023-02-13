@@ -19,9 +19,11 @@
     "cross-env": "^7.0.3",
     "eslint": "8.34.0",
     "eslint-config-next": "13.1.6",
+    "lookie": "^1.0.4",
     "next": "13.1.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-player": "^2.11.2",
     "typescript": "4.9.5"
   },
   "devDependencies": {

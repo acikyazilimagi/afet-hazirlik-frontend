@@ -14,7 +14,13 @@ const Header = () => {
   return (
     <AntHeader style={{ backgroundColor: token.colorPrimary }}>
       <div className={styles.logo}>
-        <Image width={30} height={30} src="/logo-invert.png" alt="Logo" />
+        <Image
+          width={30}
+          height={30}
+          quality={100}
+          src="/logo-invert.png"
+          alt="Logo"
+        />
         <Text>afethazırlık</Text>
       </div>
       <TopMenu />

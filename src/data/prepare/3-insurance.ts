@@ -1,36 +1,24 @@
 const data = [
   {
-    title: "Bölge Seçimi",
-    description: "Kaygan ve ovalık bölgeler olmamalı",
-    type: "text",
+    title: "DASK",
+    description: "DASK sigortası yapılmalı",
+    type: "html",
     content:
-      "Kaygan ve ovalık bölgeler deprem ve deprem sonrası oluşabilecek sel felaketlerini arttırır. Bu nedenle deprem riski yüksek bölgelerdeki evlerin yer değiştirilmesi gerekmektedir.",
+      "Aşağıdaki linkten DASK sigortası için bilgi alınabilir: <a href='https://www.sigortam.net/dask-sigortasi'>sigortam.net/dask-sigortasi</a>",
   },
   {
-    title: "Toprak Analizi",
-    description: "Gevşek toprağa sahip eğimli arazilere yapılmamalı",
-    type: "text",
+    title: "Konut sigortası",
+    description: "DASK'a ek olarak konut sigortası yapılmalı",
+    type: "html",
     content:
-      "Gevşek toprağa sahip araziler deprem sonrası kayma ve sel felaketlerine neden olabilir. Bu nedenle deprem riski yüksek bölgelerdeki evlerin yer değiştirilmesi gerekmektedir.",
+      "Aşağıdaki linkten DASK sigortası yapılabilir: <a href='https://www.sigortam.net/konut-sigortasi'>sigortam.net/konut-sigortasi</a>",
   },
   {
-    title: "Sel Tehlikesi",
-    description: "Dik boğaz ve vadi içine bina yapılmamalı",
-    type: "text",
-    content: "Dik boğaz ve vadilerdeki evler sel felaketlerine neden olabilir.",
-  },
-  {
-    title: "Çığ Riski",
-    description: "Çok kar yağan ve çığ gelen yerler olmamalı",
-    type: "text",
+    title: "DASK ve konut sigortası ",
+    description: "DASK ve konut sigortasının pek çok farkı bulunuyor",
+    type: "html",
     content:
-      "Çok kar yağan ve çığ gelen yerlerdeki evler çığ felaketlerine neden olabilir.",
-  },
-  {
-    title: "Video",
-    description: "Depremde yıkılan bir birnanın anatomisi",
-    type: "video",
-    content: "https://www.youtube.com/watch?v=gZpDh443K9Q",
+      "DASK ve konut sigortası farkları: <a href='https://www.sigortam.net/konut-sigortasi-ile-dask-arasindaki-farklar'>sigortam.net/konut-sigortasi-ile-dask-arasindaki-farklar</a>",
   },
 ];
 

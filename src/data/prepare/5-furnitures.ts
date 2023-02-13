@@ -1,36 +1,40 @@
 const data = [
   {
-    title: "Bölge Seçimi",
-    description: "Kaygan ve ovalık bölgeler olmamalı",
-    type: "text",
-    content:
-      "Kaygan ve ovalık bölgeler deprem ve deprem sonrası oluşabilecek sel felaketlerini arttırır. Bu nedenle deprem riski yüksek bölgelerdeki evlerin yer değiştirilmesi gerekmektedir.",
+    title: "Hayat üçgeni için masa ideal",
+    description: "Masa dayanıksız olabiliyor ancak masa alınacaksa:",
+    type: "html",
+    content: `
+<li>Ikea linmon gibi malzemeler olmamalı</li>
+<li>Suntalam olmamalı</li>
+<li>En az MDF olmalı</li>
+<li>En iyisi masif ama masa için uygun olmayabiliyor. Işlemesi zor</li>
+<li><a href="https://www.newyorkconcept.com/blog/icerik/kaliteli-mobilya-tercihi-nasil-yapilir">https://www.newyorkconcept.com/blog/icerik/kaliteli-mobilya-tercihi-nasil-yapilir</a></li>
+      `,
   },
   {
-    title: "Toprak Analizi",
-    description: "Gevşek toprağa sahip eğimli arazilere yapılmamalı",
+    title: "Kanepe",
+    description: "Yere çok yakın olmamalı",
     type: "text",
-    content:
-      "Gevşek toprağa sahip araziler deprem sonrası kayma ve sel felaketlerine neden olabilir. Bu nedenle deprem riski yüksek bölgelerdeki evlerin yer değiştirilmesi gerekmektedir.",
+    content: `
+    Mümkünse ayakları uzun kanepeler tercih edilmeli
+      `,
   },
   {
-    title: "Sel Tehlikesi",
-    description: "Dik boğaz ve vadi içine bina yapılmamalı",
+    title: "Yatak",
+    description: "Döşek gibi yer yataklarından uzak durulmalı",
     type: "text",
-    content: "Dik boğaz ve vadilerdeki evler sel felaketlerine neden olabilir.",
+    content: `
+    Yerden yüksek ve bazalı yataklar tercih edilmeli
+      `,
   },
   {
-    title: "Çığ Riski",
-    description: "Çok kar yağan ve çığ gelen yerler olmamalı",
-    type: "text",
-    content:
-      "Çok kar yağan ve çığ gelen yerlerdeki evler çığ felaketlerine neden olabilir.",
-  },
-  {
-    title: "Video",
-    description: "Depremde yıkılan bir birnanın anatomisi",
-    type: "video",
-    content: "https://www.youtube.com/watch?v=gZpDh443K9Q",
+    title: "Mutfak",
+    description: "Mutfakta çök kapan tutun hareketi yapılacak eşyalar",
+    type: "html",
+    content: `
+    <li>Buzdolabı</li>
+    <li>Çamaşır/bulaşık makinesi</li>
+      `,
   },
 ];
 

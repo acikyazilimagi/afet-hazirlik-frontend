@@ -1,5 +1,5 @@
 import React from "react";
-import After from "./1-after";
+import After from "./1-todos";
 
 const App = () => {
   return <After />;

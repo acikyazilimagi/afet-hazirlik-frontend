@@ -1,36 +1,48 @@
 const data = [
   {
-    title: "Bölge Seçimi",
-    description: "Kaygan ve ovalık bölgeler olmamalı",
+    title: "Yönetmelik",
+    description: "Inşaat yönetmeliği",
     type: "text",
-    content:
-      "Kaygan ve ovalık bölgeler deprem ve deprem sonrası oluşabilecek sel felaketlerini arttırır. Bu nedenle deprem riski yüksek bölgelerdeki evlerin yer değiştirilmesi gerekmektedir.",
+    content: "Yapı tekniğine ve inşaat yönetmeliğine uygun yapılmalı",
   },
   {
-    title: "Toprak Analizi",
-    description: "Gevşek toprağa sahip eğimli arazilere yapılmamalı",
+    title: "Bina dayanıklılığı",
+    description: "Binaların dayanıklılığı arttırılmalı",
     type: "text",
-    content:
-      "Gevşek toprağa sahip araziler deprem sonrası kayma ve sel felaketlerine neden olabilir. Bu nedenle deprem riski yüksek bölgelerdeki evlerin yer değiştirilmesi gerekmektedir.",
+    content: "Bina dayanıklılığı uygun yöntemler ile arttırılabilir",
   },
   {
-    title: "Sel Tehlikesi",
-    description: "Dik boğaz ve vadi içine bina yapılmamalı",
-    type: "text",
-    content: "Dik boğaz ve vadilerdeki evler sel felaketlerine neden olabilir.",
-  },
-  {
-    title: "Çığ Riski",
-    description: "Çok kar yağan ve çığ gelen yerler olmamalı",
-    type: "text",
-    content:
-      "Çok kar yağan ve çığ gelen yerlerdeki evler çığ felaketlerine neden olabilir.",
-  },
-  {
-    title: "Video",
-    description: "Depremde yıkılan bir birnanın anatomisi",
+    title: "Karbon elyaf",
+    description:
+      "Karbon elyaf kullanılarak kolon güçlendirme işlemleri gerçekleştirilebilir",
     type: "video",
-    content: "https://www.youtube.com/watch?v=gZpDh443K9Q",
+    content: "https://www.youtube.com/watch?v=sD0wxNTf3u0",
+  },
+  {
+    title: "Sismik izolatör",
+    description:
+      "Sismik izolatör kullanılarak kolon güçlendirme işlemleri gerçekleştirilebilir",
+    type: "video",
+    content: "https://www.youtube.com/watch?v=e00i1FM2CAA",
+  },
+
+  {
+    title: "Ölçümleme",
+    description: "Bina dayanıklılığını ölçme için aranacak firmalar",
+    type: "html",
+    content: `<ul>
+      <li>Deprem testi: <a href="https://armut.com/d/deprem-testi/7">armut.com</a></li>
+      <li>Beton testi: <a href="https://depremtesti.com/beton-testi-alma-nedir/">depremtesti.com</a></li>
+      <li>2000 öncesi belediye bina tespiti: <a href="https://binatespiti.ibb.istanbul">ibb.istanbul</a></li>
+      <li>Bina deprem raporu almak için: <a href="https://www.depremraporu.com.tr/">depremraporu.com</a></li>
+      </ul>`,
+  },
+  {
+    title: "Google Maps Kontrolü",
+    description: "Binanın önceki halinin Street View'da görüntüsü",
+    type: "text",
+    content:
+      "Google Maps'te streetview üzerindende binanın eski durumu inşaat hali görünebilir",
   },
 ];
 

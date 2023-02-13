@@ -1,15 +1,21 @@
 import { StepsContext } from "@/context/StepsContext";
-import { Button, message } from "antd";
+import { Button } from "antd";
+import { useRouter } from "next/router";
 import { useContext } from "react";
+import navData from "@/data/navData";
+import gotoNextPage from "./ControllersUtil";
 
 const Controllers = () => {
   const { steps, current, next, prev } = useContext(StepsContext);
+  const router = useRouter();
+  const { pathname } = router;
+
   return (
     <div
       style={{
-        marginTop: 24,
-        display: "flex",
-        justifyContent: "space-around",
+        position: "fixed",
+        bottom: 20,
+        right: 45,
       }}
     >
       <Button
@@ -24,7 +30,9 @@ const Controllers = () => {
       {current < steps.length - 1 && (
         <Button
           type="primary"
-          style={{ backgroundColor: "#6466F1" }}
+          style={{
+            backgroundColor: "#6466F1",
+          }}
           onClick={() => next && next()}
         >
           Sonraki
@@ -34,7 +42,7 @@ const Controllers = () => {
         <Button
           type="primary"
           style={{ backgroundColor: "#6466F1" }}
-          onClick={() => message.success("Bölüm tamamlandı!")}
+          onClick={() => gotoNextPage(navData, pathname, router)}
         >
           Tamamla
         </Button>

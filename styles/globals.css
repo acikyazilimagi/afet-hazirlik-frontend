@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.ant-menu-item {
+  height: unset !important;
+}
+
+.ant-menu-item-group:has(.ant-menu-item-selected) {
+  background-color: #f0f3ff;
+}

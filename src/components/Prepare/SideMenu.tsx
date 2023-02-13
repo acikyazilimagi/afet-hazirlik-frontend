@@ -6,6 +6,7 @@ import { useContext } from "react";
 import NavLink from "../Base/NavLink";
 const { Sider } = Layout;
 import navData from "@/data/navData";
+import { getSideMenuItems } from "./SideMenuUtil";
 
 const SideMenu = () => {
   const {
@@ -13,6 +14,9 @@ const SideMenu = () => {
   } = theme.useToken();
   const { current, setCurrent } = useContext(StepsContext);
   const { pathname } = useRouter();
+  const defaultOpenKeys = navData
+    .filter((item) => pathname.startsWith(item.href))
+    .map((item) => item.href);
 
   return (
     <>
@@ -20,30 +24,10 @@ const SideMenu = () => {
         <Menu
           mode="inline"
           defaultSelectedKeys={[pathname]}
-          defaultOpenKeys={[navData[0].href]}
+          defaultOpenKeys={defaultOpenKeys}
           style={{ height: "100%", borderRight: 0 }}
-        >
-          {navData.map((nav) => (
-            <Menu.SubMenu key={nav.href} title={nav.title}>
-              {nav.data.map((subNav) => (
-                <Menu.Item key={subNav.href} style={{ height: "unset" }}>
-                  <NavLink href={subNav.href}>
-                    <span>{subNav.title}</span>
-                  </NavLink>
-                  {subNav.href === pathname && (
-                    <Steps
-                      items={subNav.data}
-                      current={current}
-                      direction="vertical"
-                      size="small"
-                      onChange={(current) => setCurrent && setCurrent(current)}
-                    />
-                  )}
-                </Menu.Item>
-              ))}
-            </Menu.SubMenu>
-          ))}
-        </Menu>
+          items={getSideMenuItems(navData, current, setCurrent!, pathname)}
+        />
       </Sider>
     </>
   );

@@ -1,6 +1,7 @@
 import AppProvider from "@/context/AppProvider";
 import type { AppProps } from "next/app";
 import Head from "next/head";
+import "antd/dist/reset.css";
 import "../../styles/globals.css";
 
 if (process.env.NEXT_PUBLIC_API_MOCKING === "enabled") {

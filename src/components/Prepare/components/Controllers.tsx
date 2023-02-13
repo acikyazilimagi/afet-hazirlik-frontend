@@ -17,7 +17,7 @@ const Controllers = () => {
           margin: "0 8px",
           visibility: current > 0 ? "visible" : "hidden",
         }}
-        onClick={() => prev()}
+        onClick={() => prev && prev()}
       >
         Önceki
       </Button>
@@ -25,7 +25,7 @@ const Controllers = () => {
         <Button
           type="primary"
           style={{ backgroundColor: "#6466F1" }}
-          onClick={() => next()}
+          onClick={() => next && next()}
         >
           Sonraki
         </Button>

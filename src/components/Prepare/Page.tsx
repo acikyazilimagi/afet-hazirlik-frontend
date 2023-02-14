@@ -13,7 +13,6 @@ import { useRouter } from "next/router";
 import Device from "../Device";
 
 const Page = ({ children }: any) => {
-  const { current, setCurrent } = useContext(StepsContext);
   const { pathname } = useRouter();
   return (
     <>
@@ -29,12 +28,7 @@ const Page = ({ children }: any) => {
                 {isMobile ? (
                   <div>
                     <TopMenu />
-                    <TopSteps
-                      navData={navData}
-                      current={current}
-                      setCurrent={setCurrent!}
-                      pathname={pathname}
-                    />
+                    <TopSteps navData={navData} pathname={pathname} />
                     <Layout style={{ padding: 0 }}>
                       <Main>{children}</Main>
                     </Layout>

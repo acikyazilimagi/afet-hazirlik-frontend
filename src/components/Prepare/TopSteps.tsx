@@ -1,4 +1,6 @@
+import { StepsContext } from "@/context/StepsContext";
 import { Layout, Steps } from "antd";
+import React, { useContext, useEffect, useRef } from "react";
 import {
   getCurrentMenuIndex,
   getSubMenuIndex,
@@ -7,16 +9,24 @@ import {
 type Props = {
   navData: any;
   pathname: string;
-  current: number;
-  setCurrent: (index: number) => void;
 };
-const TopSteps = ({ navData, pathname, current, setCurrent }: Props) => {
+const TopSteps = ({ navData, pathname }: Props) => {
+  const { current, setCurrent } = useContext(StepsContext);
+  const refLayout = useRef<HTMLBaseElement>(null);
   const currentMenuIndex = getCurrentMenuIndex(navData, pathname);
   const subMenu = navData[currentMenuIndex!].data.find(
     (item: { href: string }) => item.href === pathname
   );
+  useEffect(() => {
+    refLayout!.current!.scrollTo({
+      left: current > 2 ? current * 75 : 0,
+      behavior: "smooth",
+    });
+  }, [current]);
+
   return (
     <Layout
+      ref={refLayout}
       style={{
         backgroundColor: "#fff",
         overflow: "auto",

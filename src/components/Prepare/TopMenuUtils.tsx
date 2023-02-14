@@ -22,7 +22,7 @@ export const getTopMenuItems = (
   const indexMenu = getCurrentMenuIndex(sideMenuList, pathname);
   const indexSubMenu = getSubMenuIndex(sideMenuList, pathname);
   const selectedMenu = sideMenuList[indexMenu].data[indexSubMenu];
-  console.log("index", indexSubMenu, selectedMenu);
+
   return [
     getItem(
       selectedMenu.title,

@@ -63,7 +63,7 @@ export default function App({ Component, pageProps }: AppProps) {
           rel="icon"
           type="image/png"
           sizes="192x192"
-          href="/favicon/android-icon-192x192/.png"
+          href="/favicon/android-icon-192x192.png"
         />
         <link
           rel="icon"

@@ -9,7 +9,7 @@ const Main = ({ children }: any) => {
   return (
     <Content
       style={{
-        padding: 24,
+        padding: "24px",
         margin: 0,
         minHeight: "100vh",
         background: colorBgContainer,

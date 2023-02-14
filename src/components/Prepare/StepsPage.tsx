@@ -1,4 +1,5 @@
 import StepsProvider, { Step, StepsContext } from "@/context/StepsContext";
+import { NextPageContext } from "next";
 import React, { useContext } from "react";
 import Content from "./components/Content";
 import Controllers from "./components/Controllers";

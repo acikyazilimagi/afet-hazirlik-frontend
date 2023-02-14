@@ -18,19 +18,12 @@ const Content = () => {
   const contentStyle: React.CSSProperties = {
     minHeight: 260,
   };
-  const data = [
-    "Racing car sprays burning fuel into crowd.",
-    "Japanese princess to wed commoner.",
-    "Australian walks 100km after outback crash.",
-    "Man charged over missing wedding girl.",
-    "Los Angeles battles huge wildfires.",
-  ];
 
   return (
     <div style={contentStyle}>
       <Title level={3}>{step.title}</Title>
       <Title level={4}>{step.description}</Title>
-      {isVideo && <ReactPlayer url={step.content} />}
+      {isVideo && <ReactPlayer width="100%" height="100%" url={step.content} />}
       {isText && <Paragraph>{step.content}</Paragraph>}
       {isImage && (
         <Image

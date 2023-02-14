@@ -1,29 +1,31 @@
-import { Menu, MenuProps, theme } from "antd";
-import React from "react";
+import { StepsContext } from "@/context/StepsContext";
+import { Layout, Menu, Steps, theme } from "antd";
 
-const { useToken } = theme;
-const TopMenu = () => {
-  const items1: MenuProps["items"] = [
-    "Anasayfa",
-    "Hakkımızda",
-    "İletişim",
-    "Giriş Yap",
-  ].map((key) => ({
-    key,
-    label: key,
-  }));
-  const { token } = useToken();
+import { useRouter } from "next/router";
+import { useContext } from "react";
+import NavLink from "../Base/NavLink";
+const { Sider } = Layout;
+import navData from "@/data/navData";
+import { getTopMenuItems } from "./TopMenuUtils";
+
+type Props = {};
+
+const TopMenu = ({}: Props) => {
+  const {
+    token: { colorBgContainer },
+  } = theme.useToken();
+  const { current, setCurrent } = useContext(StepsContext);
+  const { pathname } = useRouter();
   return (
-    <Menu
-      style={{
-        backgroundColor: token.colorPrimary,
-        justifyContent: "flex-end",
-      }}
-      theme="dark"
-      mode="horizontal"
-      defaultSelectedKeys={["Anasayfa"]}
-      items={items1}
-    />
+    <>
+      <Sider style={{ background: colorBgContainer, width: "100vw" }}>
+        <Menu
+          mode="inline"
+          style={{ borderRight: 0, width: "100vw" }}
+          items={getTopMenuItems(navData, current, setCurrent!, pathname)}
+        />
+      </Sider>
+    </>
   );
 };
 

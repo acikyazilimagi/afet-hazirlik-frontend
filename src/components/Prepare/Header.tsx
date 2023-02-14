@@ -1,7 +1,7 @@
 import { MenuProps, theme, Typography } from "antd";
 import React from "react";
 import { Layout } from "antd";
-import TopMenu from "./TopMenu";
+import TopMenu from "./NavMenu";
 import styles from "../../../styles/Header.module.css";
 import Image from "next/image";
 

@@ -8,7 +8,9 @@ const { Sider } = Layout;
 import navData from "@/data/navData";
 import { getSideMenuItems } from "./SideMenuUtil";
 
-const SideMenu = () => {
+type Props = {};
+
+const SideMenu = ({}: Props) => {
   const {
     token: { colorBgContainer },
   } = theme.useToken();

@@ -3,7 +3,7 @@ import { Button } from "antd";
 import { useRouter } from "next/router";
 import { useContext } from "react";
 import navData from "@/data/navData";
-import gotoNextPage from "./ControllersUtil";
+import gotoNextSection from "./ControllersUtil";
 
 const Controllers = () => {
   const { steps, current, next, prev } = useContext(StepsContext);
@@ -42,7 +42,7 @@ const Controllers = () => {
         <Button
           type="primary"
           style={{ backgroundColor: "#6466F1" }}
-          onClick={() => gotoNextPage(navData, pathname, router)}
+          onClick={() => gotoNextSection(navData, pathname, router)}
         >
           Tamamla
         </Button>

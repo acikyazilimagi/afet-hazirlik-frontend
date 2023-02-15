@@ -38,7 +38,7 @@ const data = [
       </ul>`,
   },
   {
-    title: "Google Maps Kontrolü",
+    title: "StreetView",
     description: "Binanın önceki halinin Street View'da görüntüsü",
     type: "text",
     content:

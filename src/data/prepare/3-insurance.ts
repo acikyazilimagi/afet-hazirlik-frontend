@@ -14,7 +14,7 @@ const data = [
       "Aşağıdaki linkten DASK sigortası yapılabilir: <a href='https://www.sigortam.net/konut-sigortasi'>sigortam.net/konut-sigortasi</a>",
   },
   {
-    title: "DASK ve konut sigortası ",
+    title: "Farklar",
     description: "DASK ve konut sigortasının pek çok farkı bulunuyor",
     type: "html",
     content:

@@ -16,19 +16,22 @@ const Content = () => {
   const isHtml = step.type === "html";
 
   const contentStyle: React.CSSProperties = {
-    minHeight: 260,
+    minHeight: 460,
   };
 
   return (
     <div style={contentStyle}>
       <Title level={3}>{step.title}</Title>
       <Title level={4}>{step.description}</Title>
-      {isVideo && <ReactPlayer width="100%" height="100%" url={step.content} />}
+      {isVideo && (
+        <ReactPlayer width="100%" height="400px" url={step.content} />
+      )}
       {isText && <Paragraph>{step.content}</Paragraph>}
       {isImage && (
         <Image
-          width={400}
+          width={800}
           height={300}
+          style={{ width: "100%" }}
           alt={step.description}
           src={step.content}
         />

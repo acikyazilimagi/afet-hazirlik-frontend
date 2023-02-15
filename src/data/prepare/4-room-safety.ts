@@ -3,7 +3,7 @@ const data = [
     title: "Gardolaplar",
     description: "L köşebant ile sabitleme yapılmalı",
     type: "html",
-    content: `<ul><li>L aparat: <a href='https://www.hepsiburada.com/hmo-dizayn-gri-l-demir-dolap-sabitleme-15-55-55-masa-gonye-5-adet-vida-dubel-p-hbv00001bvrq0'>hepsiburada.com</a></li><li>Video: <iframe width="560" height="315" src="https://www.youtube.com/embed/HBuZgL-OBb4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li></ul>`,
+    content: `<ul><li>L aparat: <a href='https://www.hepsiburada.com/hmo-dizayn-gri-l-demir-dolap-sabitleme-15-55-55-masa-gonye-5-adet-vida-dubel-p-hbv00001bvrq0'>hepsiburada.com</a></li><li>Video: <iframe height="315" src="https://www.youtube.com/embed/HBuZgL-OBb4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li></ul>`,
   },
   {
     title: "Iple sabitleme",
@@ -55,7 +55,7 @@ const data = [
     </ul>`,
   },
   {
-    title: "Dolap ve çekmece kapakları",
+    title: "Dolap kapakları",
     description: "Çocuk kilitleri kullanılabilir",
     type: "video",
     content: `https://www.youtube.com/watch?v=yv6_J9qX8GE`,
@@ -66,7 +66,7 @@ const data = [
     type: "html",
     content: `Kahve makinesi, airfryer gibi ağır tezgah üstü eşyaların sabitlenmeli.<br/>
     Buzdolabı sabitleme: 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/fqhMQ0KHbv4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/fqhMQ0KHbv4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     `,
   },
 ];
